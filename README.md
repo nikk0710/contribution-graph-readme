@@ -65,23 +65,5 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 For any inquiries, feel free to reach out via [your email](mailto:youremail@example.com).
 
 
-# Contribution Activity Graph
-
-This project generates a visually appealing contribution activity graph that can be displayed in your GitHub README file. It fetches contribution data from a specified source (e.g., GitHub API) and renders it in a graph format.
-
-## 🚀 Getting Started
-
-To get started with this project, follow the instructions below:
-
-### Prerequisites
-
-- Node.js (version 14 or higher)
-- npm (Node Package Manager)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/contribution-graph-readme.git
 
 Thank you for checking out the Contribution Activity Graph project! Let's visualize our contributions together! 🚀
