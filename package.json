@@ -1,0 +1,39 @@
+{
+  "name": "contribution-graph-readme",
+  "version": "1.0.0",
+  "description": "A project to display a visually appealing contribution activity graph in the README file.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "update-readme": "ts-node scripts/update-readme.ts"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chart.js": "^3.6.0",
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/contribution-graph-readme.git"
+  },
+  "keywords": [
+    "contribution",
+    "graph",
+    "README",
+    "GitHub",
+    "visualization"
+  ],
+  "author": "Aphirak Keawmool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/contribution-graph-readme/issues"
+  },
+  "homepage": "https://github.com/yourusername/contribution-graph-readme#readme"
+}
