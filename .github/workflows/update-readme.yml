@@ -1,37 +1,34 @@
 name: Update README Contribution Graph
 
-# ทริกเกอร์ workflow
 on:
   schedule:
     - cron: '0 0 * * *' # รันทุกวันเวลา 00:00 UTC
-  workflow_dispatch: # รันด้วยตนเองได้
+  workflow_dispatch:
+
+permissions:
+  contents: write  # ✅ ให้สิทธิ์เขียนไฟล์ใน repo
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      # เช็คเอา repository ลงเครื่อง runner
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: true # ใช้ GITHUB_TOKEN สำหรับ push กลับ
+          persist-credentials: true
 
-      # ตั้งค่า Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # ติดตั้ง dependencies
       - name: Install dependencies
         run: npm install
 
-      # รันสคริปต์ update-readme
       - name: Update README
         run: npm run update-readme
 
-      # Commit & Push กลับ repository
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
